@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coding_frameworks",
+  "info": {
+    "singularName": "coding-framework",
+    "pluralName": "coding-frameworks",
+    "displayName": "Coding Framework",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "experiences": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::experience.experience",
+      "inversedBy": "frameworks"
+    }
+  }
+}

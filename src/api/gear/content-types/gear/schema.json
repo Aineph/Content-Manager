@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gears",
+  "info": {
+    "singularName": "gear",
+    "pluralName": "gears",
+    "displayName": "Gear"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "category": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coding_languages",
+  "info": {
+    "singularName": "coding-language",
+    "pluralName": "coding-languages",
+    "displayName": "Coding Language",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "experiences": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::experience.experience",
+      "mappedBy": "languages"
+    }
+  }
+}

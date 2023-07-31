@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audio_tracks",
+  "info": {
+    "singularName": "audio-track",
+    "pluralName": "audio-tracks",
+    "displayName": "Audio Track",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    }
+  }
+}
